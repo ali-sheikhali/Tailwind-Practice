@@ -1,0 +1,722 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tailwind</title>
+    <link rel="stylesheet" href="output/tailwind.css" />
+    <link rel="stylesheet" href="src/tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Oswald:wght@300;400&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    
+    <!-- ----------- header ---------------------------- -->
+    <header id="up-to-top" class="w-full relative shadow-sm shadow-gray-400 py-5 px-8 flex justify-center md:justify-around">
+        
+      <div class="hidden md:block">
+        <a href="#">
+       <img class="w-36" src="./img/easyshop.png" alt="">
+      </div>
+    </a>
+      <div class="sm:flex hidden border border-red-500 rounded-md">
+        <input class="w-44 rounded-l-md placeholder:px-5  px-3
+        bg-transparent focus:outline-none justify-center md:w-64"
+         placeholder="search..." type="text" id="search-box" />
+        <label class="rounded-r-md px-2 py-1 bg-red-500 md:pt-2 text-white transition hover:bg-white
+        hover:text-red-500" for="search-box">search</label>
+      </div>
+      <div class="hidden lg:flex mt-2 font-croissant">
+        <div class="mr-5   hover:text-blue-700  my-auto">
+            <a class="flex flex-col justify-center" href="./accunt.html">
+            <i class="fa-solid fa-user text-center"></i>
+            <p class="text-sm ">Account</p>
+        </a>
+        </div>
+        <div class="mr-5 hover:text-blue-700 relative my-auto">
+            <a class="flex flex-col justify-center" href="cart.html">
+            <i class="fa-solid fa-cart-shopping text-center"></i>
+            <p class="text-sm">Cart shoping</p>
+            <span class="absolute bg-red-500 rounded-full w-4 h-4
+            top-[-10px] left-5 text-center text-[10px]">
+              2
+            </span>
+            
+        </a>
+        </div>
+        <div class=" hover:text-blue-700 relative  my-auto">
+            <a class="flex flex-col justify-center" href="#">
+                <i class="fa-regular fa-heart text-center"></i>
+             <p class="text-sm ">satisfaction</p>
+             <span class="absolute bg-red-500 rounded-full w-4 h-4
+             top-[-10px] left-5 text-center text-[10px]">
+                5
+             </span>
+        </a>
+        </div>
+      </div>
+      <div class="absolute text-2xl top-2 left-7 sm: md:hidden event-bar">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+        <div class="top-14 left-0 rounded-md w-40 active z-[1] bg-gray-400 hidden absolute ">
+            <div class="py-2 px-3 flex justify-start ">
+                <a class="space-x-2" href="./accunt.html">
+                <i class="fa-solid fa-user text-center mt-1"></i>
+                <span>Acoount</span>
+            </a>
+            </div>
+            <div class="py-2 px-3 flex justify-start ">
+                <a class="space-x-2" href="./accunt.html">
+                <i class="fa-solid fa-user text-center mt-1"></i>
+                <span>Acoount</span>
+            </a>
+            </div>
+            <div class="py-2 px-3 flex justify-start ">
+                <a class="space-x-2" href="./accunt.html">
+                <i class="fa-solid fa-user text-center mt-1"></i>
+                <span>Acoount</span>
+            </a>
+            </div>
+        </div>
+        <!-- ----------- nav bar ---------------------- -->
+    <nav class="w-full flex  bg-blue-900 px-10 md:px-16 lg:px-16">
+        <div class="flex bg-red-500  text-xs sm:text-base event-hover-nav-bar">
+            <i class="fa-solid fa-bars text-white  pt-4 pl-2"></i>
+            <p class=" py-3 px-6 text-white">All Category</p>
+        </div>
+        <ul class="flex ml-16 sm:ml-12 text-white font-croissant text-sm mt-3">
+            <li class="mr-5 hover:text-red-400"><a href="">Home</a></li>
+            <li class="mr-5 hover:text-red-400"><a href="shop.html">Shop</a></li>
+            <li class="mr-5 hidden md:block hover:text-red-400"><a href="">About us</a></li>
+            <li class="mr-5 hidden md:block hover:text-red-400"><a href="">Contact Us</a></li>
+        </ul>
+        <div class="ml-auto mr-16 sm:mr-24 mt-2 font-oswald text-white hover:text-red-400">
+            <a href="./login.html">
+                <span>
+                    Login/Register
+                </span>
+            </a>
+        </div>
+    </nav>
+    <div class="bg-gray-500 absolute left-[42px] md:left-16 z-[2]  w-[157px] text-white hidden all-category">
+        <div class="pl-3 flex py-2 border-b border-gray-400">
+           <img class="w-7" src="./img/bed.svg" alt="">
+           <span class="ml-auto mr-4">BedRoom</span>
+        </div>
+        <div class="px-3 flex py-2 border-b border-gray-400">
+            <img class="w-7" src="./img/sofa.svg" alt="">
+            <span class="ml-auto mr-4">Sofa</span>
+         </div>
+         <div class="px-3 flex py-2 border-b border-gray-400">
+            <img class="w-7" src="./img/office.svg" alt="">
+            <span class="ml-auto mr-4">Office</span>
+         </div>
+         <div class="px-2 flex py-2 border-b border-gray-400">
+            <img class="w-7" src="./img/sofa.svg" alt="">
+            <span class="text-sm mt-1 ml-auto">Out Door Cafe</span>
+         </div>
+         <div class="px-3 flex py-2 border-b border-gray-400">
+            <img class="w-7" src="./img/terrace.svg" alt="">
+            <span class="ml-auto mr-4">Trace</span>
+         </div>
+    </div>
+    <!-- -----------mobile nav bar ---------------------- -->
+    <section class="fixed bottom-0 left-0 right-0 sm:hidden bg-blue-800 py-5 z-50">
+        <div class="flex justify-around text-white text-xl ">
+            <div class="cursor-pointer Mobile-bar">
+               <i class="fa-solid fa-bars"></i> 
+            </div>
+            <div class="cursor-pointer">
+                <a href="cart.html"><i  class="fa-solid fa-cart-shopping"></i> </a>
+            </div>
+            <div class="cursor-pointer">
+                <i class="fa-solid fa-magnifying-glass search-nav"></i>
+            </div>
+        </div>
+        
+    </section>
+    <div class="absolute transition duration-500 active-mobile-nav hidden top-0 left-0 h-screen bg-white z-20">
+        <h3 class="text-2xl mt-5 ml-3 mr-3 border-b-2 mb-10">Mobile nav bar</h3>
+        <div class="ml-5 space-y-3 font-croissant">
+            <p >Home</p>
+            <p>Shope</p>
+            <p>about Us</p>
+            <p>Contact Us</p>
+            <p>Account</p>
+            <p>Login</p>
+ 
+        </div>
+    </div>
+    <div class="absolute right-0 top-0 h-screen bg-white z-30 hidden active-search ">
+        <h3 class="text-2xl mt-5 ml-3 mr-3 border-b-2 mb-10 text-center">Mobile Search bar</h3>
+        <div class="mt-52 mx-10">
+            <input class="border-2 border-red-500 focus:outline-none hover:bg-gray-200
+             px-3 py-2 rounded-md" type="text" placeholder="Search...">
+        </div>
+    
+    </div>
+    <!-- -----------mobile nav bar ---------------------- -->
+    <!-- ------------------- Hero header ------------------------- -->
+        <section class="w-full relative">
+            <div>
+                <img src="./img/banner-bg.jpg" alt="">
+            </div>
+            <div class="absolute flex flex-col top-11 left-14
+             lg:top-16 lg:left-20  xl:top-24 xl:left-[200px]
+             lg:w-[410px]  px-4 py-2 rounded-lg bg-gray-400">
+                <h2 class="font-oswald lg:mb-5 text-base lg:text-2xl">Easyshop the Best Furniture of Iran</h2>
+                <p class="text-justify hidden lg:block">
+                    Furniture refers to objects intended to support various human activities such as seating (e.g., stools, chairs, and sofas), eating (tables), storing items, working, and sleeping
+                </p>
+            </div>
+            <div class="absolute top-28 left-56 lg:top-64 lg:left-[450px]
+            xl:top-72 xl:left-[600px]">
+                <a href="https://www.varzesh3.com/" class="target:blank">
+                    <button class="bg-red-500 hover:bg-white font-croissant
+                     hover:text-red-500 px-4 py-1 lg:px-7 lg:py-3 rounded-lg
+                     text-white
+                    text-xs " >More...</button>
+                </a>
+            </div>
+        </section>
+    <!-- -------------- send package ---------------------- -->
+
+        <section class="w-6/12 lg:w-9/12 flex flex-col sm:flex-row sm:justify-around mx-auto  justify-center mt-16">
+            <div class="border-2 rounded-md border-red-400 mb-10 lg:mr-10 md:mr-2
+             flex px-6 py-3 hover:bg-gray-200">
+                <div class="w-2/12 mt-4 mr-20 sm:mr-3">
+                    <img src="./img/delivery-van.svg" alt="">
+                </div>    
+                <div class="w-10/12">
+                    <p class="text-xl font-semibold">Free Shiping</p>
+                    <p class="text-sm text-gray-400 mt-2">for order 2000$</p>
+                </div>
+            </div>
+            <div class="border-2 rounded-md border-red-400 mb-10 lg:mr-10 md:mr-2
+             flex px-6 py-3 hover:bg-gray-200">
+                <div class="w-2/12 mt-4 mr-20 sm:mr-3">
+                    <img src="./img/delivery-van.svg" alt="">
+                </div>    
+                <div class="w-10/12">
+                    <p class="text-xl font-semibold">Money return</p>
+                    <p class="text-sm text-gray-400 mt-2">before 30 days money return</p>
+                </div>
+            </div>
+            <div class="border-2 rounded-md border-red-400 mb-10 lg:mr-10 md:mr-2
+             flex px-6 py-3 hover:bg-gray-200">
+                <div class="w-2/12 mt-4 mr-20 sm:mr-3">
+                    <img src="./img/delivery-van.svg" alt="">
+                </div>    
+                <div class="w-10/12">
+                    <p class="text-xl font-semibold">24/7</p>
+                    <p class="text-sm text-gray-400 mt-2">Customer Support</p>
+                </div>
+            </div>
+        </section>
+        
+          <a class=" bg-red-500 rounded-full w-9 h-9 pt-1 text-center
+           right-3 bottom-[-50px] fixed z-10 hover:bg-red-600 text-white
+           transition-all duration-1000 translate-y-[-130px]"
+           href="#up-to-top">
+              <i class="fa-solid fa-arrow-up"></i>
+          </a>
+       
+        <!-- ---------------- main section ---------------------- -->
+
+        <section class="relative mt-10 mx-5 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+    
+            <div class="mx-5 relative rounded-lg flex justify-center items-center mb-4" >
+                <img class="hover:blur-sm rounded-lg"  src="./img/category-1.jpg" alt="">
+                <span class="absolute font-oswald text-white text-2xl">BedRoom</span>
+            </div>
+            <div class="mx-5 relative rounded-lg flex justify-center items-center mb-4" >
+                <img class="hover:blur-sm rounded-lg"  src="./img/category-2.jpg" alt="">
+                <span class="absolute font-oswald text-white text-2xl">Bed</span>
+            </div>
+            <div class="mx-5 relative rounded-lg flex justify-center items-center mb-4" >
+                <img class="hover:blur-sm rounded-lg"  src="./img/category-3.jpg" alt="">
+                <span class="absolute font-oswald text-white text-2xl">Office</span>
+            </div>
+            <div class="mx-5 relative rounded-lg flex justify-center items-center mb-4" >
+                <img class="hover:blur-sm rounded-lg"  src="./img/category-4.jpg" alt="">
+                <span class="absolute font-oswald text-white text-2xl">trace</span>
+            </div>
+            <div class="mx-5 relative rounded-lg flex justify-center items-center mb-4" >
+                <img class="hover:blur-sm rounded-lg"  src="./img/category-5.jpg" alt="">
+                <span class="absolute font-oswald text-white text-2xl">Home</span>
+            </div>
+            <div class="mx-5 relative rounded-lg flex justify-center items-center mb-4" >
+                <img class="hover:blur-sm rounded-lg"  src="./img/category-6.jpg" alt="">
+                <span class="absolute font-oswald text-white text-2xl">lunch Room</span>
+            </div>
+        </section>
+        <!-- ------------------ top new Arival----------------- -->
+        <section class="mt-5 mx-auto w-9/12">
+            <h2 class="font-oswald font-bold text-3xl flex justify-center mb-10 ">top new Arrival</h2>
+            <div class="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-auto shadow-lg">
+                <div class="mb-5">
+                    <div class="relative flex justify-center items-end event-top-new-arrival-1 " >
+                        <img class="hover:brightness-75" src="./img/product10.jpg" alt="">
+                        <div class="absolute hidden top-new-arrival-1 bg-gray-500 text-white w-full py-2 text-center">
+                            <i class="fa-solid fa-eye mr-3"></i>
+                            <span> Quick sales</span>
+                        </div>
+                        <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] 
+                        hidden top-new-arrival-1 text-white text-3xl">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="p-5 ">
+                        <h5 class="font-bold font-croissant text-2xl">new Chair</h5>
+                        <span class="font-semibold text-xl text-red-500">
+                            $45 
+                        </span> 
+                        <del class="ml-5 ">$55</del>
+                    </div>
+                    <div class="px-5 mb-5">
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <span class="ml-5"> (480)</span>
+                    </div>
+                    <div>
+                        <button class="w-full flex justify-center
+                        hover:bg-red-600 py-3 text-white bg-red-500">add to your cart</button>
+                    </div>
+                </div>
+                <div class="mb-5">
+                    <div  class="relative flex justify-center items-end event-top-new-arrival-2 ">
+                        <img class="hover:brightness-75" src="./img/product8.jpg" alt="">
+                        <div class="absolute hidden top-new-arrival-2 bg-gray-500 text-white w-full py-2 text-center">
+                            <i class="fa-solid fa-eye mr-3"></i>
+                            <span> Quick sales</span>
+                        </div>
+                        <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] 
+                        hidden top-new-arrival-2 text-white text-3xl">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="p-5 ">
+                        <h5 class="font-bold font-croissant text-2xl">new Chair</h5>
+                        <span class="font-semibold text-xl text-red-500">
+                            $45 
+                        </span> 
+                        <del class="ml-5 ">$55</del>
+                    </div>
+                    <div class="px-5 mb-5">
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <span class="ml-5"> (480)</span>
+                    </div>
+                    <div>
+                        <button class="w-full hover:bg-red-600 flex justify-center py-3 text-white bg-red-500">add to your cart</button>
+                    </div>
+                </div>
+                <div >
+                    <div  class="relative flex justify-center items-end event-top-new-arrival-3 ">
+                        <img class="hover:brightness-75" src="./img/product9.jpg" alt="">
+                        <div class="absolute hidden top-new-arrival-3 bg-gray-500 text-white w-full py-2 text-center">
+                            <i class="fa-solid fa-eye mr-3"></i>
+                            <span> Quick sales</span>
+                        </div>
+                        <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] 
+                        hidden top-new-arrival-3 text-white text-3xl">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="p-5 ">
+                        <h5 class="font-bold font-croissant text-2xl">new Chair</h5>
+                        <span class="font-semibold text-xl text-red-500">
+                            $45 
+                        </span>
+                        <del class="ml-5 ">$55</del> 
+                    </div>
+                    <div class="px-5 mb-5">
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <span class="ml-5"> (480)</span>
+                    </div>
+                    <div>
+                        <button class="w-full hover:bg-red-600 flex justify-center py-3 text-white bg-red-500">add to your cart</button>
+                    </div>
+                </div>
+                <div>
+                    <div  class="relative flex justify-center items-end event-top-new-arrival-4 ">
+                        <img class="hover:brightness-75 " src="./img/product12.jpg" alt="">
+                        <div class="absolute hidden top-new-arrival-4 bg-gray-500 text-white w-full py-2 text-center">
+                            <i class="fa-solid fa-eye mr-3"></i>
+                            <span> Quick sales</span>
+                        </div>
+                        <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] 
+                        hidden top-new-arrival-4 text-white text-3xl">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="p-5 ">
+                        <h5 class="font-bold font-croissant text-2xl">new Chair</h5>
+                        <span class="font-semibold text-xl text-red-500">
+                            $45 
+                        </span> 
+                        <del class="ml-5 ">$55</del>
+                    </div>
+                    <div class="px-5 mb-5">
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <span class="ml-5"> (480)</span>
+                    </div>
+                    <div>
+                        <button class="w-full hover:bg-red-600 flex justify-center py-3 text-white bg-red-500">add to your cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-20 flex justify-center lg:w-8/12 mx-auto">
+                <a href="#">
+                <img src="./img/offer.jpg" alt="">
+            </a>
+            </div>
+        </section>
+     <!-- ------------------------- recommeded section --------------------- -->
+     <section class="mt-20 mx-10 ">
+        <h2 class="font-oswald font-bold text-3xl flex justify-center mb-10 ">Recommended For You</h2>
+        <div class="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-auto shadow-lg">
+            <div class="mb-5">
+                <div class="relative flex justify-center items-end event-top-new-arrival-1 " >
+                    <img class="hover:brightness-75" src="./img/product10.jpg" alt="">
+                    <div class="absolute hidden top-new-arrival-1 bg-gray-500 text-white w-full py-2 text-center">
+                        <i class="fa-solid fa-eye mr-3"></i>
+                        <span> Quick sales</span>
+                    </div>
+                    <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] 
+                    hidden top-new-arrival-1 text-white text-3xl">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="p-5 ">
+                    <h5 class="font-bold font-croissant text-2xl">new Chair</h5>
+                    <span class="font-semibold text-xl text-red-500">
+                        $45 
+                    </span> 
+                    <del class="ml-5 ">$55</del>
+                </div>
+                <div class="px-5 mb-5">
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <span class="ml-5"> (480)</span>
+                </div>
+                <div>
+                    <button class="w-full flex justify-center
+                    hover:bg-red-600 py-3 text-white bg-red-500">add to your cart</button>
+                </div>
+            </div>
+            <div class="mb-5">
+                <div class="relative flex justify-center items-end event-top-new-arrival-1 " >
+                    <img class="hover:brightness-75" src="./img/product7.jpg" alt="">
+                    <div class="absolute hidden top-new-arrival-1 bg-gray-500 text-white w-full py-2 text-center">
+                        <i class="fa-solid fa-eye mr-3"></i>
+                        <span> Quick sales</span>
+                    </div>
+                    <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] 
+                    hidden top-new-arrival-1 text-white text-3xl">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="p-5 ">
+                    <h5 class="font-bold font-croissant text-2xl">new Chair</h5>
+                    <span class="font-semibold text-xl text-red-500">
+                        $45 
+                    </span> 
+                    <del class="ml-5 ">$55</del>
+                </div>
+                <div class="px-5 mb-5">
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <span class="ml-5"> (480)</span>
+                </div>
+                <div>
+                    <button class="w-full flex justify-center
+                    hover:bg-red-600 py-3 text-white bg-red-500">add to your cart</button>
+                </div>
+            </div>
+            <div class="mb-5">
+                <div class="relative flex justify-center items-end event-top-new-arrival-1 " >
+                    <img class="hover:brightness-75" src="./img/product6.jpg" alt="">
+                    <div class="absolute hidden top-new-arrival-1 bg-gray-500 text-white w-full py-2 text-center">
+                        <i class="fa-solid fa-eye mr-3"></i>
+                        <span> Quick sales</span>
+                    </div>
+                    <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] 
+                    hidden top-new-arrival-1 text-white text-3xl">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="p-5 ">
+                    <h5 class="font-bold font-croissant text-2xl">new Chair</h5>
+                    <span class="font-semibold text-xl text-red-500">
+                        $45 
+                    </span> 
+                    <del class="ml-5 ">$55</del>
+                </div>
+                <div class="px-5 mb-5">
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <span class="ml-5"> (480)</span>
+                </div>
+                <div>
+                    <button class="w-full flex justify-center
+                    hover:bg-red-600 py-3 text-white bg-red-500">add to your cart</button>
+                </div>
+            </div>
+            <div class="mb-5">
+                <div class="relative flex justify-center items-end event-top-new-arrival-1 " >
+                    <img class="hover:brightness-75" src="./img/product5.jpg" alt="">
+                    <div class="absolute hidden top-new-arrival-1 bg-gray-500 text-white w-full py-2 text-center">
+                        <i class="fa-solid fa-eye mr-3"></i>
+                        <span> Quick sales</span>
+                    </div>
+                    <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] 
+                    hidden top-new-arrival-1 text-white text-3xl">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="p-5 ">
+                    <h5 class="font-bold font-croissant text-2xl">new Chair</h5>
+                    <span class="font-semibold text-xl text-red-500">
+                        $45 
+                    </span> 
+                    <del class="ml-5 ">$55</del>
+                </div>
+                <div class="px-5 mb-5">
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <span class="ml-5"> (480)</span>
+                </div>
+                <div>
+                    <button class="w-full flex justify-center
+                    hover:bg-red-600 py-3 text-white bg-red-500">add to your cart</button>
+                </div>
+            </div>
+            <div class="mb-5">
+                <div class="relative flex justify-center items-end event-top-new-arrival-1 " >
+                    <img class="hover:brightness-75" src="./img/product4.jpg" alt="">
+                    <div class="absolute hidden top-new-arrival-1 bg-gray-500 text-white w-full py-2 text-center">
+                        <i class="fa-solid fa-eye mr-3"></i>
+                        <span> Quick sales</span>
+                    </div>
+                    <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] 
+                    hidden top-new-arrival-1 text-white text-3xl">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="p-5 ">
+                    <h5 class="font-bold font-croissant text-2xl">new Chair</h5>
+                    <span class="font-semibold text-xl text-red-500">
+                        $45 
+                    </span> 
+                    <del class="ml-5 ">$55</del>
+                </div>
+                <div class="px-5 mb-5">
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <span class="ml-5"> (480)</span>
+                </div>
+                <div>
+                    <button class="w-full flex justify-center
+                    hover:bg-red-600 py-3 text-white bg-red-500">add to your cart</button>
+                </div>
+            </div>
+            <div class="mb-5">
+                <div  class="relative flex justify-center items-end event-top-new-arrival-2 ">
+                    <img class="hover:brightness-75" src="./img/product8.jpg" alt="">
+                    <div class="absolute hidden top-new-arrival-2 bg-gray-500 text-white w-full py-2 text-center">
+                        <i class="fa-solid fa-eye mr-3"></i>
+                        <span> Quick sales</span>
+                    </div>
+                    <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] 
+                    hidden top-new-arrival-2 text-white text-3xl">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="p-5 ">
+                    <h5 class="font-bold font-croissant text-2xl">new Chair</h5>
+                    <span class="font-semibold text-xl text-red-500">
+                        $45 
+                    </span> 
+                    <del class="ml-5 ">$55</del>
+                </div>
+                <div class="px-5 mb-5">
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <span class="ml-5"> (480)</span>
+                </div>
+                <div>
+                    <button class="w-full hover:bg-red-600 flex justify-center py-3 text-white bg-red-500">add to your cart</button>
+                </div>
+            </div>
+            <div >
+                <div  class="relative flex justify-center items-end event-top-new-arrival-3 ">
+                    <img class="hover:brightness-75" src="./img/product9.jpg" alt="">
+                    <div class="absolute hidden top-new-arrival-3 bg-gray-500 text-white w-full py-2 text-center">
+                        <i class="fa-solid fa-eye mr-3"></i>
+                        <span> Quick sales</span>
+                    </div>
+                    <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] 
+                    hidden top-new-arrival-3 text-white text-3xl">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="p-5 ">
+                    <h5 class="font-bold font-croissant text-2xl">new Chair</h5>
+                    <span class="font-semibold text-xl text-red-500">
+                        $45 
+                    </span>
+                    <del class="ml-5 ">$55</del> 
+                </div>
+                <div class="px-5 mb-5">
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <span class="ml-5"> (480)</span>
+                </div>
+                <div>
+                    <button class="w-full hover:bg-red-600 flex justify-center py-3 text-white bg-red-500">add to your cart</button>
+                </div>
+            </div>
+            <div>
+                <div  class="relative flex justify-center items-end event-top-new-arrival-4 ">
+                    <img class="hover:brightness-75 " src="./img/product12.jpg" alt="">
+                    <div class="absolute hidden top-new-arrival-4 bg-gray-500 text-white w-full py-2 text-center">
+                        <i class="fa-solid fa-eye mr-3"></i>
+                        <span> Quick sales</span>
+                    </div>
+                    <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] 
+                    hidden top-new-arrival-4 text-white text-3xl">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="p-5 ">
+                    <h5 class="font-bold font-croissant text-2xl">new Chair</h5>
+                    <span class="font-semibold text-xl text-red-500">
+                        $45 
+                    </span> 
+                    <del class="ml-5 ">$55</del>
+                </div>
+                <div class="px-5 mb-5">
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <i class="fas fa-star text-yellow-300"></i>
+                    <span class="ml-5"> (480)</span>
+                </div>
+                <div>
+                    <button class="w-full hover:bg-red-600 flex justify-center py-3 text-white bg-red-500">add to your cart</button>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+
+    <!-- ---------------------- fooooooooter ----------------------- -->
+        <footer class="mt-20 border-t bg-gray-200">
+            <div class="flex mt-5 mb-10">
+                <div class="w-6/12 md:w-5/12 ml-10 flex flex-col justify-center items-center">
+                    <div class="flex justify-start">
+                        <img src="./img/easyshop.png" alt="">
+                    </div>
+                    <p class="text-sm md:text-base md:font-oswald">the Best Producer of Furniture</p>
+                    <div class="text-left space-x-2 mt-3">
+                        <i class="fa-brands fa-instagram hover:text-blue-500"></i>
+                        <i class="fa-brands fa-telegram hover:text-blue-500"></i>
+                        <i class="fa-brands fa-twitter hover:text-blue-500"></i>
+                        <i class="fa-brands fa-linkedin-in hover:text-blue-500"></i>
+                    </div>
+                </div>
+                <div class="w-6/12 ml-28 md:w-7/12 grid grid-cols-4">
+                    <div class="grid grid-cols-1">
+                        <h3 class="text-gray-400 mb-3">soloution</h3>
+                        <a class="hover:text-blue-500 mb-1" href="">Marketing</a>
+                        <a class="hover:text-blue-500 mb-1" href="">Anylises</a>
+                        <a class="hover:text-blue-500 mb-1" href="">Commerce</a>
+                        <a class="hover:text-blue-500 mb-1" href="">insights</a>
+                    </div>
+                    <div class="hidden md:grid grid-cols-1">
+                        <h3 class="text-gray-400 mb-3">soloution</h3>
+                        <a class="hover:text-blue-500 mb-1" href="">Marketing</a>
+                        <a class="hover:text-blue-500 mb-1" href="">Anylises</a>
+                        <a class="hover:text-blue-500 mb-1" href="">Commerce</a>
+                        <a class="hover:text-blue-500 mb-1" href="">insights</a>
+                    </div>
+                    <div class="hidden lg:grid grid-cols-1">
+                        <h3 class="text-gray-400 mb-3">soloution</h3>
+                        <a class="hover:text-blue-500 mb-1" href="">Marketing</a>
+                        <a class="hover:text-blue-500 mb-1" href="">Anylises</a>
+                        <a class="hover:text-blue-500 mb-1" href="">Commerce</a>
+                        <a class="hover:text-blue-500 mb-1" href="">insights</a>
+                    </div>
+                    <div class="hidden lg:grid grid-cols-1">
+                        <h3 class="text-gray-400 mb-3">soloution</h3>
+                        <a class="hover:text-blue-500 mb-1" href="">Marketing</a>
+                        <a class="hover:text-blue-500 mb-1" href="">Anylises</a>
+                        <a class="hover:text-blue-500 mb-1" href="">Commerce</a>
+                        <a class="hover:text-blue-500 mb-1" href="">insights</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="flex justify-around bg-blue-900 py-3">
+                <p class="text-white">All Right Reserved september 2023</p>
+               <div class="hidden md:block w-60">
+                <img src="./img/methods.png" alt="">
+               </div>
+            </div>
+        </footer>
+       
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+

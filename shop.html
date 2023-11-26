@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="output/tailwind.css" />
+    <link rel="stylesheet" href="src/tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Oswald:wght@300;400&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <header id="up-to-top" class="w-full relative shadow-sm shadow-gray-400 py-5 px-8 flex justify-center md:justify-around">
+        
+        <div class="hidden md:block">
+          <a href="#">
+         <img class="w-36" src="./img/easyshop.png" alt="">
+        </div>
+      </a>
+        <div class="sm:flex hidden border border-red-500 rounded-md">
+          <input class="w-44 rounded-l-md placeholder:px-5  px-3
+          bg-transparent focus:outline-none justify-center md:w-64"
+           placeholder="search..." type="text" id="search-box" />
+          <label class="rounded-r-md px-2 py-1 bg-red-500 md:pt-2 text-white transition hover:bg-white
+          hover:text-red-500" for="search-box">search</label>
+        </div>
+        <div class="hidden lg:flex mt-2 font-croissant">
+          <div class="mr-5   hover:text-blue-700  my-auto">
+              <a class="flex flex-col justify-center" href="accunt.html">
+              <i class="fa-solid fa-user text-center"></i>
+              <p class="text-sm ">Account</p>
+          </a>
+          </div>
+          <div class="mr-5 hover:text-blue-700 relative my-auto">
+              <a class="flex flex-col justify-center" href="#">
+              <i class="fa-solid fa-cart-shopping text-center"></i>
+              <p class="text-sm">Cart shoping</p>
+              <span class="absolute bg-red-500 rounded-full w-4 h-4
+              top-[-10px] left-5 text-center text-[10px]">
+                2
+              </span>
+              
+          </a>
+          </div>
+          <div class=" hover:text-blue-700 relative  my-auto">
+              <a class="flex flex-col justify-center" href="#">
+                  <i class="fa-regular fa-heart text-center"></i>
+               <p class="text-sm ">satisfaction</p>
+               <span class="absolute bg-red-500 rounded-full w-4 h-4
+               top-[-10px] left-5 text-center text-[10px]">
+                  5
+               </span>
+          </a>
+          </div>
+        </div>
+        <div class="absolute text-2xl top-2 left-7 sm: md:hidden event-bar">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+          <div class="top-14 left-0 rounded-md w-40 active z-[1] bg-gray-400 hidden absolute ">
+              <div class="py-2 px-3 flex justify-start ">
+                  <a class="space-x-2" href="./accunt.html">
+                  <i class="fa-solid fa-user text-center mt-1"></i>
+                  <span>Acoount</span>
+              </a>
+              </div>
+              <div class="py-2 px-3 flex justify-start ">
+                  <a class="space-x-2" href="./accunt.html">
+                  <i class="fa-solid fa-user text-center mt-1"></i>
+                  <span>Acoount</span>
+              </a>
+              </div>
+              <div class="py-2 px-3 flex justify-start ">
+                  <a class="space-x-2" href="./accunt.html">
+                  <i class="fa-solid fa-user text-center mt-1"></i>
+                  <span>Acoount</span>
+              </a>
+              </div>
+          </div>
+                  <!-- ----------- nav bar ---------------------- -->
+    <nav class="w-full flex  bg-blue-900 px-10 md:px-16 lg:px-16">
+        <div class="flex bg-red-500  text-xs sm:text-base event-hover-nav-bar">
+            <i class="fa-solid fa-bars text-white  pt-4 pl-2"></i>
+            <p class=" py-3 px-6 text-white">All Category</p>
+        </div>
+        <ul class="flex ml-16 sm:ml-12 text-white font-croissant text-sm mt-3">
+            <li class="mr-5 hover:text-red-400"><a href="imdex.html">Home</a></li>
+            <li class="mr-5 hover:text-red-400"><a href="">Shop</a></li>
+            <li class="mr-5 hidden md:block hover:text-red-400"><a href="">About us</a></li>
+            <li class="mr-5 hidden md:block hover:text-red-400"><a href="">Contact Us</a></li>
+        </ul>
+        <div class="ml-auto mr-16 sm:mr-24 mt-2 font-oswald text-white hover:text-red-400">
+            <a href="login.html">
+                <span>
+                    Login/Register
+                </span>
+            </a>
+        </div>
+    </nav>
+    <div class="bg-gray-500 absolute left-[42px] md:left-16 z-[2]  w-[157px] text-white hidden all-category">
+        <div class="pl-3 flex py-2 border-b border-gray-400">
+           <img class="w-7" src="./img/bed.svg" alt="">
+           <span class="ml-auto mr-4">BedRoom</span>
+        </div>
+        <div class="px-3 flex py-2 border-b border-gray-400">
+            <img class="w-7" src="./img/sofa.svg" alt="">
+            <span class="ml-auto mr-4">Sofa</span>
+         </div>
+         <div class="px-3 flex py-2 border-b border-gray-400">
+            <img class="w-7" src="./img/office.svg" alt="">
+            <span class="ml-auto mr-4">Office</span>
+         </div>
+         <div class="px-2 flex py-2 border-b border-gray-400">
+            <img class="w-7" src="./img/sofa.svg" alt="">
+            <span class="text-sm mt-1 ml-auto">Out Door Cafe</span>
+         </div>
+         <div class="px-3 flex py-2 border-b border-gray-400">
+            <img class="w-7" src="./img/terrace.svg" alt="">
+            <span class="ml-auto mr-4">Trace</span>
+         </div>
+    </div>
+        <!-- -----------mobile nav bar ---------------------- -->
+        <section class="fixed bottom-0 left-0 right-0 sm:hidden bg-blue-800 py-5 z-50">
+            <div class="flex justify-around text-white text-xl ">
+                <div class="cursor-pointer Mobile-bar">
+                   <i class="fa-solid fa-bars"></i> 
+                </div>
+                <div class="cursor-pointer">
+                    <i  class="fa-solid fa-cart-shopping"></i> 
+                </div>
+                <div class="cursor-pointer">
+                    <i class="fa-solid fa-magnifying-glass search-nav"></i>
+                </div>
+            </div>
+            
+        </section>
+        <div class="absolute transition duration-500 active-mobile-nav hidden top-0 left-0 h-screen bg-white z-20">
+            <h3 class="text-2xl mt-5 ml-3 mr-3 border-b-2 mb-10">Mobile nav bar</h3>
+            <div class="ml-5 space-y-3 font-croissant">
+                <p >Home</p>
+                <p>Shope</p>
+                <p>about Us</p>
+                <p>Contact Us</p>
+                <p>Account</p>
+                <p>Login</p>
+     
+            </div>
+        </div>
+        <div class="absolute right-0 top-0 h-screen bg-white z-30 hidden active-search ">
+            <h3 class="text-2xl mt-5 ml-3 mr-3 border-b-2 mb-10 text-center">Mobile Search bar</h3>
+            <div class="mt-52 mx-10">
+                <input class="border-2 border-red-500 focus:outline-none hover:bg-gray-200
+                 px-3 py-2 rounded-md" type="text" placeholder="Search...">
+            </div>
+        <!-- ------------------------------------------------------------- -->
+        </div>
+           <div class="flex space-x-2 ml-20 my-5" >
+            <div class="space-x-2 ">
+                <a class="hover:text-red-500" href="imdex.html">
+                <i class="fa-solid fa-house"></i>
+            </a>
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </div>
+            <p>
+                Shop
+            </p>
+           </div>     
+        <!-- -------------------------- side bar Mobile --------------------------------- -->
+           <section class="bg-blue-800 flex justify-around w-full text-center lg:hidden">
+             <div class="flex justify-around">
+                <div class="flex justify-around space-x-3 py-3  hover:text-red-500 text-white active-category cursor-pointer">
+                  <h3 class="leading-3">Category</h3>
+                  <i class="fa-solid fa-chevron-down "></i>      
+                 </div>
+            </div>
+            <div class="flex justify-around">
+                <div class="flex justify-around space-x-3 hover:text-red-500 text-white py-3 active-brand cursor-pointer">
+                  <h3 class="leading-3">Brand</h3>
+                  <i class="fa-solid fa-chevron-down "></i>      
+                 </div>
+            </div>
+            <div class="flex justify-around">
+                <div class="flex justify-around hover:text-red-500 space-x-3 text-white py-3 price-active cursor-pointer">
+                  <h3 class="leading-3">Price</h3>
+                  <i class="fa-solid fa-chevron-down "></i>      
+                 </div>
+            </div>
+           
+             </div>
+           </section>
+           <div class="absolute top-0 left-0 z-40 bg-red-500 hidden cate-mobile-bar  h-screen w-4/12">
+                <div class="flex justify-around text-white pb-2 border-b-2 mt-5">
+                    <h2 class="font-bold leading-3">Category</h2>
+                    <i class="fa-solid fa-xmark Close-category"></i>
+               </div>
+               <div class="mt-5">
+                    <div class="flex justify-around text-white">
+                        <div>
+                        <a href="#">
+                        <input type="checkbox" name="">
+                        <span>Bed Room</span>
+                    </div>
+                        <span>(110)</span>
+                    </a>
+               
+                    </div>
+               </div>
+               <div class="mt-5">
+                <div class="flex justify-around text-white">
+                    <div>
+                    <a href="#">
+                    <input type="checkbox" name="">
+                    <span>Office</span>
+                </div>
+                    <span>(93)</span>
+                </a>
+           
+                </div>
+           </div>
+           <div class="mt-5">
+            <div class="flex justify-around text-white">
+                <div>
+                <a href="#">
+                <input type="checkbox" name="">
+                <span>Sofa</span>
+            </div>
+                <span>(56)</span>
+            </a>
+       
+            </div>
+       </div>
+       <div class="mt-5">
+        <div class="flex justify-around text-white">
+            <div>
+            <a href="#">
+            <input type="checkbox" name="">
+            <span>Outdoor</span>
+        </div>
+            <span>(36)</span>
+        </a>
+   
+        </div>
+   </div>
+             
+
+           </div>
+           <div class="absolute top-0 left-0 z-40 bg-red-500 hidden brand-mobile-bar  h-screen w-4/12">
+            <div class="flex justify-around text-white pb-2 border-b-2 mt-5">
+                <h2 class="font-bold leading-3">Brand</h2>
+                <i class="fa-solid fa-xmark Close-category"></i>
+           </div>
+           <div class="mt-5">
+                <div class="flex justify-around text-white">
+                    <div>
+                    <a href="#">
+                    <input type="checkbox" name="">
+                    <span>novin Wood</span>
+                </div>
+                
+                </a>
+           
+                </div>
+           </div>
+           <div class="mt-5">
+            <div class="flex justify-around text-white">
+                <div>
+                <a href="#">
+                <input type="checkbox" name="">
+                <span>Best Wood</span>
+            </div>
+                
+            </a>
+       
+            </div>
+       </div>
+       <div class="mt-5">
+        <div class="flex justify-around text-white">
+            <div>
+            <a href="#">
+            <input type="checkbox" name="">
+            <span>beuaty Wood</span>
+        </div>
+            
+        </a>
+   
+        </div>
+   </div>
+   <div class="mt-5">
+    <div class="flex justify-around text-white">
+        <div>
+        <a href="#">
+        <input type="checkbox" name="">
+        <span>Nice Wood</span>
+    </div>
+        
+    </a>
+
+    </div>
+</div>
+       </div>
+       <div class="absolute top-0 right-0 z-40 bg-red-500 hidden Price-mobile-bar  h-screen w-4/12">
+        <div class="flex justify-around text-white pb-2 border-b-2 mt-5">
+            <h2 class="font-bold leading-3">price</h2>
+            <i class="fa-solid fa-xmark Close-category"></i>
+       </div>
+       <div class="mt-5">
+            <div class="flex justify-around text-white">
+              <span>100$</span>
+            </div>
+       </div>
+       <div class="mt-5">
+        <div class="flex justify-around text-white">
+          <span>200$</span>
+        </div>
+   </div>
+   <div class="mt-5">
+    <div class="flex justify-around text-white">
+      <span>250$</span>
+    </div>
+</div>
+<div class="mt-5">
+    <div class="flex justify-around text-white">
+      <span>400$</span>
+    </div>
+</div>
+    
+   </div>
+           <!-- -------------------------- side bar --------------------------------- -->
+        <section class="w-10/12 flex mx-auto mt-5 gap-x-5">
+            <div class="w-3/12 space-y-2 hidden lg:block">
+               <div class="border border-gray-200  rounded-md">
+                    <h3 class="ml-2 font-bold font-roboto  py-4" >Category</h3>
+                    <div class="flex mx-5 border-b-2 py-2">
+                        <input type="checkbox" name="" id="">
+                        <span class="ml-2 hover:text-blue-500">BedRoom</span>
+                        <span class="ml-auto mr-3">(115)</span>
+                    </div>
+                    <div class="flex mx-5 border-b-2 py-2">
+                        <input type="checkbox" name="" id="">
+                        <span class="ml-2 hover:text-blue-500">Office</span>
+                        <span class="ml-auto mr-3">(36)</span>
+                    </div>
+                    <div class="flex mx-5 border-b-2 py-2">
+                        <input type="checkbox" name="" id="">
+                        <span class="ml-2 hover:text-blue-500">Sofa</span>
+                        <span class="ml-auto mr-3">(53)</span>
+                    </div>
+                    <div class="flex mx-5 py-2">
+                        <input type="checkbox" name="" id="">
+                        <span class="ml-2 hover:text-blue-500">Outdoor</span>
+                        <span class="ml-auto mr-3">(21)</span>
+                    </div>
+               </div>
+               <div class="border  border-gray-200 rounded-md">
+                <h3 class="ml-2 font-bold font-roboto  py-4" >Brand</h3>
+                    <div class="flex mx-5 border-b-2 py-2">
+                        <span class="leading-3 mr-3 hover:text-blue-500">best wood</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <span class="ml-auto mr-3 leading-3">(21)</span>
+                    </div>
+                    <div class="flex mx-5 border-b-2 py-2">
+                        <span class="leading-3 mr-3 hover:text-blue-500">Nice wood</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <span class="ml-auto mr-3 leading-3">(43)</span>
+                    </div>
+                    <div class="flex mx-5 border-b-2 py-2">
+                        <span class="leading-3 mr-3 hover:text-blue-500">Novin wood</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <span class="ml-auto mr-3 leading-3">(39)</span>
+                    </div>
+                    <div class="flex mx-5 border-b-2 py-2">
+                        <span class="leading-3 mr-3 hover:text-blue-500">Beauty wood</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <span class="ml-auto mr-3 leading-3">(73)</span>
+                    </div>
+                    <div class="flex mx-5  py-2">
+                        <span class="leading-3 mr-3 hover:text-blue-500">best wood</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <span class="ml-auto mr-3 leading-3">(21)</span>
+                    </div>
+               </div>
+               <div class="border  border-gray-200 rounded-md">
+                <h3 class="ml-2 font-bold font-roboto  py-4" >Size</h3>
+                    <div class="flex justify-around mb-2">
+                        <span class="border rounded-md py-1 px-2 hover:bg-red-500 hover:text-white">xs</span>
+                        <span class="border rounded-md py-1 px-2 hover:bg-red-500 hover:text-white">s</span>
+                        <span class="border rounded-md py-1 px-2 hover:bg-red-500 hover:text-white">lx</span>
+                        <span class="border rounded-md py-1 px-2 hover:bg-red-500 hover:text-white">2xl</span>
+                        <span class="border rounded-md py-1 px-2 hover:bg-red-500 hover:text-white">3xl</span>
+                    </div>
+               </div>
+            </div>
+            <!-- --------------------- main shop ---------------------- -->
+            <div class="w-9/12 grid grid-cols-1 gap-y-5 md:grid-cols-2 md:gap-x-10 lg:grid-cols-3 mx-auto ">
+                
+                <div class="shadow-md p-2 rounded-md">
+                    <div class="relative flex justify-center main-shop-acive1 items-end">
+                        <img class="rounded-md  hover:brightness-75" src="./img/product2.jpg" alt="">
+                        <div class="absolute rounded-lg py-2 text-center shop-main-active1 hidden  
+                        bg-gray-300 w-full">
+                            <span>add to cart quickly</span>
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-oswald font-bold text-3xl mb-3"> chair</h3>
+                        <span class="text-red-500 text-2xl" >200$</span>
+                         <del class="ml-5">300$</del>
+                    </div>
+                    <div class="mb-3 pl-5">
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <span>(150)</span>
+                    </div>
+                    <button class="w-full bg-red-500 hover:bg-red-600 text-white py-1 rounded-md">Add to cart</button>
+                </div>
+                <div class="shadow-md p-2 rounded-md">
+                    <div class="relative flex justify-center main-shop-acive2 items-end">
+                        <img class="rounded-md  hover:brightness-75" src="./img/product3.jpg" alt="">
+                        <div class="absolute rounded-lg py-2 text-center shop-main-active2 hidden  
+                        bg-gray-300 w-full">
+                            <span>add to cart quickly</span>
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-oswald font-bold text-3xl mb-3"> chair</h3>
+                        <span class="text-red-500 text-2xl" >200$</span>
+                         <del class="ml-5">300$</del>
+                    </div>
+                    <div class="mb-3 pl-5">
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <span>(150)</span>
+                    </div>
+                    <button class="w-full bg-red-500 hover:bg-red-600 text-white py-1 rounded-md">Add to cart</button>
+                </div>
+                <div class="shadow-md p-2 rounded-md">
+                    <div class="relative flex justify-center main-shop-acive3 items-end">
+                        <img class="rounded-md  hover:brightness-75" src="./img/product4.jpg" alt="">
+                        <div class="absolute rounded-lg py-2 text-center shop-main-active3 hidden  
+                        bg-gray-300 w-full">
+                            <span>add to cart quickly</span>
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-oswald font-bold text-3xl mb-3"> chair</h3>
+                        <span class="text-red-500 text-2xl" >200$</span>
+                         <del class="ml-5">300$</del>
+                    </div>
+                    <div class="mb-3 pl-5">
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <span>(150)</span>
+                    </div>
+                    <button class="w-full bg-red-500 hover:bg-red-600 text-white py-1 rounded-md">Add to cart</button>
+                </div>
+                <div class="shadow-md p-2 rounded-md">
+                    <div class="relative flex justify-center main-shop-acive4 items-end">
+                        <img class="rounded-md  hover:brightness-75" src="./img/product5.jpg" alt="">
+                        <div class="absolute rounded-lg py-2 text-center shop-main-active4 hidden  
+                        bg-gray-300 w-full">
+                            <span>add to cart quickly</span>
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-oswald font-bold text-3xl mb-3"> chair</h3>
+                        <span class="text-red-500 text-2xl" >200$</span>
+                         <del class="ml-5">300$</del>
+                    </div>
+                    <div class="mb-3 pl-5">
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <span>(150)</span>
+                    </div>
+                    <button class="w-full bg-red-500 hover:bg-red-600 text-white py-1 rounded-md">Add to cart</button>
+                </div>
+                <div class="shadow-md p-2 rounded-md">
+                    <div class="relative flex justify-center main-shop-acive5 items-end">
+                        <img class="rounded-md  hover:brightness-75" src="./img/product6.jpg" alt="">
+                        <div class="absolute rounded-lg py-2 text-center shop-main-active5 hidden  
+                        bg-gray-300 w-full">
+                            <span>add to cart quickly</span>
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-oswald font-bold text-3xl mb-3"> chair</h3>
+                        <span class="text-red-500 text-2xl" >200$</span>
+                         <del class="ml-5">300$</del>
+                    </div>
+                    <div class="mb-3 pl-5">
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <span>(150)</span>
+                    </div>
+                    <button class="w-full bg-red-500 hover:bg-red-600 text-white py-1 rounded-md">Add to cart</button>
+                </div>
+                <div class="shadow-md p-2 rounded-md">
+                    <div class="relative flex justify-center main-shop-acive6 items-end">
+                        <img class="rounded-md  hover:brightness-75" src="./img/product7.jpg" alt="">
+                        <div class="absolute rounded-lg py-2 text-center shop-main-active6 hidden  
+                        bg-gray-300 w-full">
+                            <span>add to cart quickly</span>
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-oswald font-bold text-3xl mb-3"> chair</h3>
+                        <span class="text-red-500 text-2xl" >200$</span>
+                         <del class="ml-5">300$</del>
+                    </div>
+                    <div class="mb-3 pl-5">
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <span>(150)</span>
+                    </div>
+                    <button class="w-full bg-red-500 hover:bg-red-600 text-white py-1 rounded-md">Add to cart</button>
+                </div>               
+            </div>
+        </section>
+            <!-- ---------------------- fooooooooter ----------------------- -->
+            <footer class="mt-20 border-t bg-gray-200">
+                <div class="flex mt-5 mb-10">
+                    <div class="w-6/12 md:w-5/12 ml-10 flex flex-col justify-center items-center">
+                        <div class="flex justify-start">
+                            <img src="./img/easyshop.png" alt="">
+                        </div>
+                        <p class="text-sm md:text-base md:font-oswald">the Best Producer of Furniture</p>
+                        <div class="text-left space-x-2 mt-3">
+                            <i class="fa-brands fa-instagram hover:text-blue-500"></i>
+                            <i class="fa-brands fa-telegram hover:text-blue-500"></i>
+                            <i class="fa-brands fa-twitter hover:text-blue-500"></i>
+                            <i class="fa-brands fa-linkedin-in hover:text-blue-500"></i>
+                        </div>
+                    </div>
+                    <div class="w-6/12 ml-28 md:w-7/12 grid grid-cols-4">
+                        <div class="grid grid-cols-1">
+                            <h3 class="text-gray-400 mb-3">soloution</h3>
+                            <a class="hover:text-blue-500 mb-1" href="">Marketing</a>
+                            <a class="hover:text-blue-500 mb-1" href="">Anylises</a>
+                            <a class="hover:text-blue-500 mb-1" href="">Commerce</a>
+                            <a class="hover:text-blue-500 mb-1" href="">insights</a>
+                        </div>
+                        <div class="hidden md:grid grid-cols-1">
+                            <h3 class="text-gray-400 mb-3">soloution</h3>
+                            <a class="hover:text-blue-500 mb-1" href="">Marketing</a>
+                            <a class="hover:text-blue-500 mb-1" href="">Anylises</a>
+                            <a class="hover:text-blue-500 mb-1" href="">Commerce</a>
+                            <a class="hover:text-blue-500 mb-1" href="">insights</a>
+                        </div>
+                        <div class="hidden lg:grid grid-cols-1">
+                            <h3 class="text-gray-400 mb-3">soloution</h3>
+                            <a class="hover:text-blue-500 mb-1" href="">Marketing</a>
+                            <a class="hover:text-blue-500 mb-1" href="">Anylises</a>
+                            <a class="hover:text-blue-500 mb-1" href="">Commerce</a>
+                            <a class="hover:text-blue-500 mb-1" href="">insights</a>
+                        </div>
+                        <div class="hidden lg:grid grid-cols-1">
+                            <h3 class="text-gray-400 mb-3">soloution</h3>
+                            <a class="hover:text-blue-500 mb-1" href="">Marketing</a>
+                            <a class="hover:text-blue-500 mb-1" href="">Anylises</a>
+                            <a class="hover:text-blue-500 mb-1" href="">Commerce</a>
+                            <a class="hover:text-blue-500 mb-1" href="">insights</a>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="flex justify-around bg-blue-900 py-3">
+                    <p class="text-white">All Right Reserved september 2023</p>
+                   <div class="hidden md:block w-60">
+                    <img src="./img/methods.png" alt="">
+                   </div>
+                </div>
+            </footer>
+           
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="main.js"></script>
+</body>
+</html>
